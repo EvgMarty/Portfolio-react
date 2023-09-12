@@ -58,6 +58,15 @@ const projects = [
   //React
   {
     id: ++id,
+    name: 'Portfolio React',
+    technologies: 'react',
+    img: './projects/portfolio-react.png',
+    skills: 'jsx, scss, react,',
+    repository: 'https://github.com/EvgMarty/Portfolio-react',
+    demo: 'https://portfolio-react-three-peach.vercel.app/',
+  },
+  {
+    id: ++id,
     name: 'ToDo React',
     technologies: 'react',
     img: './projects/todo-react.png',
