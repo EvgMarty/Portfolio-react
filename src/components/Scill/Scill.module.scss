@@ -1,0 +1,54 @@
+@import '../../style/var.scss';
+
+.listScillc {
+  position: relative;
+  display: flex;
+  column-gap: 50px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  .skill {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    padding: 50px;
+    background: var(--scillsBg);
+    border-radius: 6px;
+    width: 200px;
+
+    &:hover {
+      top: -5px;
+
+      img {
+        filter: grayscale(0%);
+      }
+    }
+
+    @media (max-width: 650px) {
+      width: 140px;
+      height: 140px;
+      padding: 20px;
+    }
+  }
+
+  .imgScill {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+
+    filter: grayscale(100%);
+
+    @media (max-width: 650px) {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

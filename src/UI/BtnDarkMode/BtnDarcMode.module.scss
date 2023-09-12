@@ -1,0 +1,43 @@
+/* Dark mode BTN */
+@import '../../style/var.scss';
+
+.darkModeBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 51px;
+  height: 26px;
+
+  background-color: #272727;
+  border-radius: 50px;
+  padding: 5px;
+
+  position: relative;
+  order: 9;
+  z-index: 7;
+
+  &::before {
+    content: '';
+
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    left: 1px;
+    top: 1px;
+
+    background-color: var(--white);
+    border-radius: 50px;
+    z-index: 8;
+
+    transition: left 0.2s ease-in-out;
+  }
+
+  &.active::before {
+    left: 26px;
+  }
+}
+
+.iconBtn {
+  position: relative;
+  z-index: 9;
+}

@@ -1,0 +1,15 @@
+.navList {
+  display: flex;
+  column-gap: 30px;
+}
+
+.link {
+  transition: all 0.2s ease-in-out;
+  color: var(--white);
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    color: var(--title-1);
+  }
+}

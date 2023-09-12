@@ -1,0 +1,24 @@
+@import '../../style/var.scss';
+
+.footer {
+  width: 100%;
+  height: 200px;
+  color: var(--header-text);
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footerText {
+  margin-top: 15px;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.5px;
+}

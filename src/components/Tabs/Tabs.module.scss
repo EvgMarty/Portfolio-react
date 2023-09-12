@@ -1,0 +1,62 @@
+@import '../../style/var.scss';
+
+.tabsWraper {
+  width: 100%;
+  padding: 15px;
+}
+
+.tabs {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  column-gap: 58px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 350px;
+  padding: 10px;
+  border-radius: 3px;
+  background: var(--scillsBg);
+  z-index: 2;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 186px;
+    height: 31px;
+    position: absolute;
+    background: var(--title-1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    left: 5px;
+    top: 5px;
+    z-index: 3;
+  }
+
+  &.tabs_2::before {
+    width: 151px;
+    left: 193px;
+  }
+
+  .tab {
+    color: var(--text-color);
+    z-index: 4;
+  }
+}
+
+.tabContent {
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 3px;
+  padding: 25px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+
+  &.active {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+    justify-content: center;
+  }
+}

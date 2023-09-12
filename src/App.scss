@@ -1,0 +1,17 @@
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 100vh;
+
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: -0.5px;
+
+  scroll-behavior: smooth;
+}

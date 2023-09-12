@@ -1,0 +1,112 @@
+@import '../../style/var.scss';
+
+.navBar {
+  position: relative;
+  height: 65px;
+  background: var(--black);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    color: var(--title-1);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  .menuWrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  // Навигация
+  .list {
+    display: flex;
+    column-gap: 40px;
+    transition: all 0.3s ease-in-out;
+
+    .link {
+      position: relative;
+      align-items: center;
+      color: var(--header-text);
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 3px;
+
+      &::after {
+        content: '';
+        display: block;
+        transition: all 0.2s ease-in;
+        position: absolute;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        background: var(--title-1);
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    .activeLink {
+      &::after {
+        content: '';
+        display: block;
+        transition: all 0.2s ease-in;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background: var(--title-1);
+      }
+    }
+
+    @media (max-width: 650px) {
+      position: fixed;
+      background: var(--black);
+      height: 100vh;
+      width: 300px;
+      padding: 40px;
+      top: 64px;
+      right: -600px;
+
+      box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      z-index: 15;
+    }
+
+    &.activeNavBar {
+      @media (max-width: 650px) {
+        right: 0;
+      }
+    }
+  }
+}
