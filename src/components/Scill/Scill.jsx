@@ -42,7 +42,7 @@ const Scill = () => {
       </li>
       <li className={styles.skill}>
         <img className={styles.imgScill} src={gitHub} alt="gitHub" />
-        <p>gitHub</p>
+        <p>git/gitHub</p>
       </li>
     </ul>
   );

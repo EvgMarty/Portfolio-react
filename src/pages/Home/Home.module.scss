@@ -1,7 +1,7 @@
 @import '../../style/var.scss';
 
 .home {
-  height: 640px;
+  height: 100vh;
   background: var(--black);
   color: var(--header-text);
   flex: 1 1 auto;
@@ -21,7 +21,7 @@
 }
 
 .titleWrap {
-  margin-top: 125px;
+  margin-top: 200px;
   max-width: 700px;
   text-align: center;
   padding: 15px;
