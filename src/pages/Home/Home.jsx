@@ -18,7 +18,7 @@ const Home = () => {
             </p>
           </div>
           <Button type="button" title="Download Resume">
-            <a href="./CV_Yevhen-Martyniuk_Front-end_developer.pdf" download>
+            <a href="./CV_Evhen-Martyniuk_Front-end_developer.pdf" download>
               Download CV
             </a>
           </Button>
