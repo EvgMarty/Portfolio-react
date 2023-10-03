@@ -74,6 +74,15 @@ const projects = [
     repository: 'https://github.com/EvgMarty/ToDo-React',
     demo: 'https://to-do-react-delta-silk.vercel.app/',
   },
+  {
+    id: ++id,
+    name: 'SyncSln',
+    technologies: 'react',
+    img: './projects/syncSln.png',
+    skills: 'jsx, scss, react,',
+    repository: 'https://github.com/EvgMarty/SyncSln',
+    demo: 'https://sync-sln.vercel.app/',
+  },
 ];
 
 export default projects;

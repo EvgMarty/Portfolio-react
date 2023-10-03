@@ -4,6 +4,7 @@
   display: none;
   position: relative;
   padding: 15px;
+ 
 
   &:hover {
     opacity: 70%;
@@ -19,7 +20,6 @@
     border-radius: 6px;
     background: var(--white);
     z-index: 10;
-
     transition: all 0.2s ease-in-out;
   }
 
