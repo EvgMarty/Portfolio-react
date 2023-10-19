@@ -12,21 +12,21 @@ const projects = [
   },
   {
     id: ++id,
-    name: 'Centarea',
-    technologies: 'js',
-    img: './projects/centarea.png',
-    skills: 'html, scss, js,',
-    repository: 'https://github.com/EvgMarty/Store',
-    demo: 'https://evgmarty.github.io/Store/',
-  },
-  {
-    id: ++id,
     name: 'Todo',
     technologies: 'js',
     img: './projects/todo.png',
     skills: 'html, css, js,',
     repository: 'https://github.com/EvgMarty/tasksFoToday',
     demo: 'https://evgmarty.github.io/tasksFoToday/',
+  },
+  {
+    id: ++id,
+    name: 'Centarea',
+    technologies: 'js',
+    img: './projects/centarea.png',
+    skills: 'html, scss, js,',
+    repository: 'https://github.com/EvgMarty/Store',
+    demo: 'https://evgmarty.github.io/Store/',
   },
   {
     id: ++id,
@@ -58,12 +58,21 @@ const projects = [
   //React
   {
     id: ++id,
-    name: 'Portfolio React',
+    name: 'Book Library App',
     technologies: 'react',
-    img: './projects/portfolio-react.png',
+    img: './projects/bookLibrary.png',
+    skills: 'jsx, scss, react, redux/toolkit',
+    repository: 'https://github.com/EvgMarty/BookLibraryApp',
+    demo: 'https://book-library-three-opal.vercel.app/',
+  },
+  {
+    id: ++id,
+    name: 'SyncSln',
+    technologies: 'react',
+    img: './projects/syncSln.png',
     skills: 'jsx, scss, react,',
-    repository: 'https://github.com/EvgMarty/Portfolio-react',
-    demo: 'https://portfolio-react-three-peach.vercel.app/',
+    repository: 'https://github.com/EvgMarty/SyncSln',
+    demo: 'https://sync-sln.vercel.app/',
   },
   {
     id: ++id,
@@ -76,12 +85,12 @@ const projects = [
   },
   {
     id: ++id,
-    name: 'SyncSln',
+    name: 'Portfolio React',
     technologies: 'react',
-    img: './projects/syncSln.png',
+    img: './projects/portfolio-react.png',
     skills: 'jsx, scss, react,',
-    repository: 'https://github.com/EvgMarty/SyncSln',
-    demo: 'https://sync-sln.vercel.app/',
+    repository: 'https://github.com/EvgMarty/Portfolio-react',
+    demo: 'https://portfolio-react-three-peach.vercel.app/',
   },
 ];
 

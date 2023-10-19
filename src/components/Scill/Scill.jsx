@@ -1,3 +1,4 @@
+import styles from './Scill.module.scss';
 import vsCode from '../../img/vsCode.svg';
 import html from '../../img/html.svg';
 import css from '../../img/css.svg';
@@ -6,8 +7,8 @@ import js from '../../img/js.svg';
 import react from '../../img/react.svg';
 import npm from '../../img/npm.svg';
 import gitHub from '../../img/gitHub.svg';
-
-import styles from './Scill.module.scss';
+import redux from '../../img/redux.svg';
+import webpack from '../../img/webpack.svg';
 
 const Scill = () => {
   return (
@@ -35,6 +36,14 @@ const Scill = () => {
       <li className={styles.skill}>
         <img className={styles.imgScill} src={react} alt="React" />
         <p>React</p>
+      </li>
+      <li className={styles.skill}>
+        <img className={styles.imgScill} src={redux} alt="React" />
+        <p>Redux</p>
+      </li>
+      <li className={styles.skill}>
+        <img className={styles.imgScill} src={webpack} alt="NPM" />
+        <p>Webpack</p>
       </li>
       <li className={styles.skill}>
         <img className={styles.imgScill} src={npm} alt="NPM" />
