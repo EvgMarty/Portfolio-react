@@ -3,6 +3,15 @@ let id = 0;
 const projects = [
   {
     id: ++id,
+    name: 'AirPods',
+    technologies: 'js',
+    img: './projects/airPods.png',
+    skills: 'html, css, js,',
+    repository: 'https://github.com/EvgMarty/AirPods',
+    demo: 'https://evgmarty.github.io/AirPods/',
+  },
+  {
+    id: ++id,
     name: 'Hector',
     technologies: 'js',
     img: './projects/hector.png',
